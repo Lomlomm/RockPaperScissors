@@ -3,6 +3,9 @@ body{
     font-family: 'Outfit', sans-serif;
     color: silver;
 }
+.all{
+    width: 100%;
+}
 .header{
     font-size: 30px;
     text-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
@@ -52,7 +55,10 @@ body{
     box-shadow: rgba(219, 219, 219, 0.25) 0px 5px 5px, rgba(219, 219, 219, 0.25) 0px -2px 10px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
+.image:hover{
+    box-shadow: rgba(121, 58, 58, 0.12) 0px 4px 6px, rgba(121, 58, 58, 0.12) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px, rgba(219, 219, 219, 0.25) 0px 5px 5px, rgba(219, 219, 219, 0.25) 0px -2px 10px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
+}
 .card{
     height: 100px;
     width: 100px; 
@@ -67,5 +73,18 @@ body{
 .paper .card{
     height: 90px;
     width: 90px; 
+}
+@media screen and (max-width: 800px){
+    .selection{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: fit-content;
+    }
+    .rock, 
+    .paper,
+    .scissors{
+        margin-bottom: 20px;
+    }
 }
 
